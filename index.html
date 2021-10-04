@@ -21,9 +21,10 @@
             <a href="#agenda">Agenda</a> |
             <a href="#notes">Notes</a> |
             <a href="#images">Image(s)</a> |
-            <a href="#recordings">Recordings</a> |
+            <a href="#audio-recordings">Audio File</a> |
+            <a href="#video-recordings">Video File</a> |
             <a href="#form">Form</a> |
-            <a href="#form">Credit</a>
+            <a href="#credit">Credit</a>
         </nav>
     </header>
     <hr>
@@ -64,14 +65,12 @@
             <h2 id="notes">Notes
             </h2>
 
-            <p>This is a random <strong>poem </strong>for the <i> today's meeting</i>: </p>
-            <span>
-                <p> Lorem ipsum dolor sit amet,<br>
-                    consectetur adipiscing elit,<br>
-                    sed do eiusmod tempor incididunt- <br>
-                    ut labore et dolore magna aliqua.<br>
-                </p>
-            </span>
+            <p>This <span>is</span> a random <strong>poem </strong>for the <i> today's meeting</i>: </p>
+            <p> Lorem ipsum dolor sit amet,<br>
+                consectetur adipiscing elit,<br>
+                sed do eiusmod tempor incididunt- <br>
+                ut labore et dolore magna aliqua.<br>
+            </p>
 
             <details>
                 <summary>Next meeting's agenda (preview): </summary>
@@ -96,7 +95,7 @@
         </section>
 
         <section>
-            <h2 id="recordings">Audio Recording:
+            <h2 id="audio-recordings">Audio Recording:
             </h2>
 
 
@@ -110,10 +109,8 @@
 
 
         <section>
-            <h2 id="recordings">Video Recording:
+            <h2 id="video-recordings">Video Recording:
             </h2>
-
-
 
             <video controls width="250">
 
@@ -122,8 +119,6 @@
                 Sorry, your browser doesn't support embedded videos.
             </video>
 
-
-
             <hr>
         </section>
 
@@ -131,8 +126,7 @@
         <section>
             <h2 id="form">Form</h2>
 
-
-            <form action="" method="get">
+            <form action="https://httpbin.org/post" method="get">
                 <fieldset>
                     <legend>Thoughts about this meeting?</legend>
 
@@ -159,19 +153,19 @@
                 </fieldset> <br> <br>
 
                 <fieldset>
-                    <legend>Your birthdate?</legend> 
+                    <legend>Your birthdate?</legend>
                     <input type="date" id="date" name="date"><br>
                 </fieldset><br> <br>
 
                 <fieldset>
-                    <legend>Thoughts?</legend> 
+                    <legend>Thoughts?</legend>
                     <textarea id="story" name="story">Feel free to share...
                     </textarea>
                 </fieldset><br> <br>
-               
+
                 <fieldset>
-                    <legend>Some more questions for you:</legend> 
-                    
+                    <legend>Some more questions for you:</legend>
+
                     <label>Which course are you taking?</label>
                     <select>
                         <option value="">--Please choose an option--</option>
@@ -181,10 +175,10 @@
                         <option value="105">CSE 105</option>
                         <option value="107">CSE 107</option>
                         <option value="110">CSE 110</option>
-                    </select>  <br> <br>
+                    </select> <br> <br>
 
-                    <label>Which school you go  to?</label>
-                
+                    <label>Which school you go to?</label>
+
                     <input list="school-name" />
                     <datalist id="school-name">
                         <option value="UCSD">
@@ -194,8 +188,8 @@
                     </datalist><br> <br>
 
                     <label for="name">Enter your name: </label>
-                    <input type="text" name="name" id="name" required>  <br> <br>
-                    
+                    <input type="text" name="name" id="name" required> <br> <br>
+
                     <label for="email">Enter your email: </label>
                     <input type="email" name="email" id="email" required><br> <br>
 
@@ -213,7 +207,7 @@
     </main>
 
     <footer>
-        <h2>Credit</h2>
+        <h2 id="credit">Credit</h2>
         <p>Music for the audio recording: <a href="https://www.bensound.com">https://www.bensound.com</a></p>
         <p>Image found on: <a href="https://unsplash.com/">https://unsplash.com/</a></p>
     </footer>
