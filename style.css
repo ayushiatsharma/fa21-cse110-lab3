@@ -2,6 +2,8 @@
     position: relative;
     left:30px;
 }
+
+/* absolute unit */
 #img-three { 
     position: absolute;
     left: 80px;
@@ -25,9 +27,28 @@ a:active {
     color: red;
 }
 
+/* relative unit */
 button { 
     width: 5em;
     height: 2em;
     max-width: 50em;
     min-width: 5em;
 }
+
+/* relative unit */
+p { 
+    font-size: 1.5rem;
+}
+
+ul li { 
+    font-size: 3ch;
+}
+/* absolute unit */
+nav { 
+    height: 0.5cm; 
+}
+
+/* absolute unit */
+fieldset  {
+    max-width: 33333in;
+ }
