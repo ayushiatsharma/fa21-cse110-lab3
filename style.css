@@ -1,0 +1,8 @@
+#img-two { 
+    position: relative;
+    left:30px;
+}
+#img-three { 
+    position: absolute;
+    left: 80px;
+}
