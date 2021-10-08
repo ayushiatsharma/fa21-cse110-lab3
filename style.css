@@ -24,3 +24,10 @@ a:hover {
 a:active {
     color: red;
 }
+
+button { 
+    width: 5em;
+    height: 2em;
+    max-width: 50em;
+    min-width: 5em;
+}
