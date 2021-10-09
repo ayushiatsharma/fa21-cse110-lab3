@@ -127,3 +127,8 @@ audio {
     border: 5px solid rebeccapurple;
     margin: 1em 1em 1em 1em;
 }
+
+/* universal selector */
+*  { 
+    font-family: 'Roboto', sans-serif;
+}
