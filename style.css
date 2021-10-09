@@ -1,3 +1,4 @@
+/* id selector */
 #img-two { 
     position: relative;
     left:30px;
@@ -40,6 +41,7 @@ p {
     font-size: 1.5rem;
 }
 
+/* Descendant Combinator */
 ul li { 
     font-size: 3ch;
 }
@@ -62,7 +64,7 @@ fieldset  {
     background-color: aqua;
  }
 
- /* Using flexbox properties */
+ /* Using flexbox properties. Also using a class-selector. */
  .container-flex { 
      display: flex; 
      flex-direction: row;
@@ -128,7 +130,51 @@ audio {
     margin: 1em 1em 1em 1em;
 }
 
+h1 { 
+    font-size: 40px;
+}
+
+/* Leftover selectors:  */
 /* universal selector */
 *  { 
     font-family: 'Roboto', sans-serif;
+}
+
+/* attribute selector and selector list */
+a[href="#attendees"], 
+a[href="#agenda"], 
+a[href="#notes"], 
+a[href="#images"], 
+a[href="#audio-recordings"], 
+a[href="#video-recordings"], 
+a[href="#form"], 
+a[href="#credit"]
+{ 
+    font-size: 20px;
+}
+
+/* Child Combinator */
+span {
+    background-color: lightseagreen;
+}
+
+p > span { 
+    background-color: lightgreen;
+}
+
+/* General sibling combinator */
+#credit ~ p { 
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-size: 1em;
+}
+
+/* Adjacent sibling combinator */
+#credit + p { 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Combining Two Selectors */
+summary.callout { 
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
