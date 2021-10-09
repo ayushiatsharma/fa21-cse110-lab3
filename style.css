@@ -52,3 +52,12 @@ nav {
 fieldset  {
     max-width: 33333in;
  }
+
+ p span { 
+    display: inline;
+ }
+
+ #poem { 
+    display:  block;
+    background-color: aqua;
+ }
