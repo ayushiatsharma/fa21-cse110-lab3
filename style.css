@@ -61,3 +61,31 @@ fieldset  {
     display:  block;
     background-color: aqua;
  }
+
+ /* Using flexbox properties */
+ .container-flex { 
+     display: flex; 
+     flex-direction: row;
+     justify-content: space-evenly;
+     flex-wrap: nowrap;
+ }
+ .container-flex-body { 
+    flex-shrink: 4;
+    flex-basis: auto;
+    align-self: auto;
+ }
+
+ /* Using grid properties */
+ .container-grid { 
+    display: grid; 
+    grid-template-columns: auto auto auto auto;
+    row-gap: 3em;
+    grid-template-rows: auto;
+
+
+}
+.container-grid-body { 
+    justify-self: center;
+    align-self: auto;
+    grid-column-start: 2;
+}
