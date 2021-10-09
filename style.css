@@ -9,21 +9,27 @@
     position: absolute;
     left: 80px;
 }
+
+/* For devices with 30em max-width and landscape orientation, change the bg color */
 @media screen and (max-width: 30em) and (orientation: landscape) { 
     * { 
         background-color: red;
     }
 }
 
+/* Media Query (refer back to https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) */
 @media only screen and (max-width: 600px)  {  
     body{
         background-color: rgb(105, 105, 105);
     }
 }
+
+/* Change color of the text upon hovering */
 a:hover {
     color: dodgerblue;
 }
 
+/* Change color of the link when link is clicked on */
 a:active {
     color: red;
 }
@@ -42,9 +48,11 @@ p {
 }
 
 /* Descendant Combinator */
+/* Relative Unit */
 ul li { 
     font-size: 3ch;
 }
+
 /* absolute unit */
 nav { 
     height: 0.5cm; 
@@ -55,10 +63,12 @@ fieldset  {
     max-width: 33333in;
  }
 
+ /* Testing out display */
  p span { 
     display: inline;
  }
 
+  /* Testing out display of block*/
  #poem { 
     display:  block;
     background-color: aqua;
@@ -104,6 +114,7 @@ p {
     margin: auto;
 }
 
+/* Testing out the padding */
 video { 
     padding-top: 1em;
     padding-bottom: 1em; 
@@ -130,11 +141,12 @@ audio {
     margin: 1em 1em 1em 1em;
 }
 
+/* Leftover selectors:  */
+/* Element selector:  */
 h1 { 
     font-size: 40px;
 }
 
-/* Leftover selectors:  */
 /* universal selector */
 *  { 
     font-family: 'Roboto', sans-serif;
@@ -162,18 +174,17 @@ p > span {
     background-color: lightgreen;
 }
 
-/* General sibling combinator */
+/* General sibling combinator: changes the size of the 'p' elements right after credit id */
 #credit ~ p { 
-    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     font-size: 1em;
 }
 
-/* Adjacent sibling combinator */
+/* Adjacent sibling combinator: changes the font-family of the first p tag after id called 'credit' */
 #credit + p { 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-/* Combining Two Selectors */
+/* Combining Two Selectors: change these margins for stuff with class 'classout' after summary element */
 summary.callout { 
     margin-top: 1.5em;
     margin-bottom: 1.5em;
