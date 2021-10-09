@@ -73,7 +73,7 @@ fieldset  {
     flex-shrink: 4;
     flex-basis: auto;
     align-self: auto;
- }
+ } 
 
  /* Using grid properties */
  .container-grid { 
@@ -88,4 +88,42 @@ fieldset  {
     justify-self: center;
     align-self: auto;
     grid-column-start: 2;
+}
+
+/* adding border */
+p strong { 
+    border-style: solid;
+    border-color: purple;
+    border-width: 5px;
+    border-radius: 2px;
+}
+
+p { 
+    margin: auto;
+}
+
+video { 
+    padding-top: 1em;
+    padding-bottom: 1em; 
+    padding-left: 1em;
+    padding-right: 1em; 
+}
+
+audio { 
+    padding: 1em 1em 1em 1em;
+}
+
+/* Testing margins */
+.list-one { 
+    background-color: lightcoral;
+    border: 5px solid rebeccapurple;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.list-two { 
+    background-color: lightblue;
+    border: 5px solid rebeccapurple;
+    margin: 1em 1em 1em 1em;
 }
